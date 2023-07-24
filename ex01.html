@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JS Day4 Page_1</title>
+</head>
+<body>
+	<script src="test.js"></script>
+	<script src="code.jquery.com_jquery-3.7.0.min.js"></script> <!-- jquery 사용 방법1 -->
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script> <!-- jquery 사용 방법2 -->
+	<script type="text/javascript">
+		print01();
+		$(document).ready(function(){
+			console.log("jquery 실행");
+			$(".hide").click ( function(){
+				$("p").hide();	//태그는 이름만  쓰기
+			});
+			$("#show").click ( function(){
+				$("p").show();
+			});
+		})
+		window.onload = () =>{
+			console.log("aaaa");
+		}
+	</script>
+	<p>이벤트 처리</p>
+	<button class="hide">메시지 삭제</button>
+	<button id="show">메시지 보기</button>
+</body>
+</html>
